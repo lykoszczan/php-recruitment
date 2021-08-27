@@ -54,9 +54,9 @@ class Application implements ImporterInterface
      * Application constructor.
      * @param array $params
      */
-    public function __construct(array $params = [])
+    public function __construct(array $params)
     {
-        $this->appParams = ApplicationParams::setParams($params);
+        $this->appParams = ApplicationParams::getFilledObject($params);
     }
 
     /**

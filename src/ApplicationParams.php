@@ -119,7 +119,7 @@ class ApplicationParams
      * @param array $params
      * @return static
      */
-    public static function setParams(array $params): self {
+    public static function getFilledObject(array $params): self {
         $selfObj = new self();
 
         $selfObj->setDbHost($params['database']['host']);
