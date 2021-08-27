@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  piwik_recrutment_task:
+    container_name: piwik_recrutment_task
+    build: .
+    volumes:
+      - ../:/app:rw
