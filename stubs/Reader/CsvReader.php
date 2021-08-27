@@ -16,7 +16,7 @@ class CsvReader implements \SeekableIterator
 
     public function current()
     {
-        $this->iterator->current();
+        return $this->iterator->current();
     }
 
     public function next()
@@ -26,12 +26,12 @@ class CsvReader implements \SeekableIterator
 
     public function key()
     {
-        $this->iterator->key();
+        return $this->iterator->key();
     }
 
     public function valid()
     {
-        $this->iterator->valid();
+        return $this->iterator->valid();
     }
 
     public function rewind()
